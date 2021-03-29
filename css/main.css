@@ -23,6 +23,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -52,16 +53,32 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+
 }
 p {
   color: #333333;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-p.article-para {
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 2.8rem;
+  padding-bottom: .75em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #E2E2E2;
+}
+
+.article-para {
   font-size: 1.25rem;
   margin-bottom: .75em;
   line-height: 1.875rem;
+}
+
+.caption {
+  padding-top: .5em;
+  font-size: .875rem;
+  color: #666666;
 }
 
 .unrelated-articles {
@@ -155,4 +172,5 @@ header {
 .article-wrapper .image-wrapper {
   grid-column-start: 2;
   grid-column-end: 4;
+  margin-bottom: 2em;
 }
