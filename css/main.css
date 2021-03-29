@@ -81,14 +81,6 @@ h1 {
   color: #666666;
 }
 
-.unrelated-articles {
-  position: absolute;
-  font-size: .875rem;
-  width: 210px;
-  top: 1600px;
-  left: 980px;
-}
-
 .unrelated-articles ul li {
   margin-bottom: 1em;
 }
@@ -161,16 +153,22 @@ header {
 
 .article-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 50% 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr) 37.5em repeat(3, 1fr);
   grid-template-rows: auto;
+  justify-content: center;
 }
 
 .article-wrapper * {
-  grid-column-start: 3;
+  grid-column-start: 4;
 }
 
 .article-wrapper .image-wrapper {
-  grid-column-start: 2;
-  grid-column-end: 4;
   margin-bottom: 2em;
+  justify-self: center;
+}
+
+.unrelated-articles {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 8;
 }
