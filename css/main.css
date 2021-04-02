@@ -69,6 +69,10 @@ h1 {
   border-bottom: 1px solid #E2E2E2;
 }
 
+b {
+  font-weight: bold;
+}
+
 .article-para {
   font-size: 1.25rem;
   margin-bottom: .75em;
@@ -78,17 +82,8 @@ h1 {
 .caption {
   padding-top: .5em;
   font-size: .875rem;
+  line-height: 1.25rem;
   color: #666666;
-}
-
-.unrelated-articles ul li {
-  margin-bottom: 1em;
-}
-
-.unrelated-articles ul :first-child {
-  font-weight: bold;
-  padding-bottom: .5em;
-  border-bottom: 1px solid #E2E2E2;
 }
 
 .btn {
@@ -155,7 +150,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr) 37.5em repeat(3, 1fr);
   grid-template-rows: auto;
-  justify-content: center;
+
 }
 
 .article-wrapper * {
@@ -167,8 +162,116 @@ header {
   justify-self: center;
 }
 
-.unrelated-articles {
-  grid-column-start: 6;
-  grid-column-end: 7;
-  grid-row-start: 8;
+.social-media {
+  margin-bottom: 1em;
+}
+
+.media-icon {
+  padding: .5em;
+  margin-right: .5em;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+.media-icon:first-child {
+  padding: .5em .6em;
+}
+
+.media-icon.shareable {
+  background-color: #eee;
+}
+
+.media-icon.shareable:hover {
+  background-color: white;
+  border-color: #eee;
+}
+
+.author-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-author {
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+
+.publish-date {
+  font-size: .875rem;
+  padding-bottom: 3em;
+  margin-bottom: 1.25em;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.sign-up {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+
+.btn-sign-up {
+  flex-basis: 25%;
+  font-weight: bold;
+  padding: 6px 12px 4px 12px;
+}
+
+.inflation-theory {
+  margin-top: 1.25em;
+}
+
+.inflation-image {
+  position: relative;
+  width: 945px;
+  background-image: url("../assets/inflation-945.png");
+  background-size: 945px 576px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1.5em;
+  padding-bottom: 3em;
+}
+
+.inflation-image::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 50px;
+  border-bottom: 1px solid black;
+}
+
+.inflation-image p {
+  width: 230px;
+  margin-top: 155px;
+  font-size: .875rem;
+  line-height: 1.073rem;
+}
+
+.article-subtext {
+  font-size: .75rem;
+  margin-bottom: 3em;
+  line-height: 1.25rem;
+}
+
+.comment-and-share {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5em;
+}
+
+.btn-comments {
+  background-color: #567B95;
+  border-color: #326891;
+  color: white;
+  text-align: center;
+  flex-basis: 55%;
+  padding: 6px 24px 4px 24px;
+}
+
+.bottom-content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
